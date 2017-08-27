@@ -10,6 +10,8 @@ end
 gem 'rails', '~> 5.1.1'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
+gem 'materialize-sass'
+gem 'material_icons'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails'
 gem 'turbolinks', '~> 5'
@@ -26,10 +28,9 @@ gem 'stripe_event'
 gem 'oauth2'
 gem 'omniauth-stripe-connect'
 
-
-
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
@@ -44,5 +45,7 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'rubocop', require: false
 end
 
